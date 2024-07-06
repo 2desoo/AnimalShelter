@@ -1,4 +1,4 @@
-package AnimalShelter.model;
+package AnimalShelter.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,13 +19,6 @@ public class UserMessages {
     private String massagesText;
 
     public UserMessages() {}
-
-    public UserMessages(Long id, Long chatId, LocalDateTime messagesData, String massagesText) {
-        this.id = id;
-        this.chatId = chatId;
-        this.messagesData = messagesData;
-        this.massagesText = massagesText;
-    }
 
     public Long getId() {
         return id;
